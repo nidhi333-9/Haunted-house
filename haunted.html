@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted house</title>
+    <link rel="stylesheet" href="haunted.css">
+</head>
+
+<body>
+    <section>
+        <img src="images/bg.jpeg" id="bg" width="100%">
+        <img src="images/haunted.png" id="haunted" width="400px">
+        <img src="images/bats.png" id="bats">
+        <img src="images/wolf.png" id="wolf" width="900px">
+        <img src="images/car.png" id="car" width="180px">
+
+
+    </section>
+    <div class="sec">
+        <div class="content">
+            <h2>HOGWARTS CASTLE</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dolorum delectus ea ad, nihil laborum
+                alias illo praesentium similique nesciunt explicabo distinctio omnis error quisquam voluptas. Aperiam,
+                illo! Officiis perspiciatis veritatis libero incidunt earum accusamus. Pariatur enim harum maxime a
+                repellat praesentium quod eaque ullam repellendus iure autem cum laboriosam laudantium nesciunt ducimus
+                officia itaque facilis eius ea optio laborum, maiores dolores quas quibusdam? Aspernatur necessitatibus
+                blanditiis, nihil voluptates non impedit autem est, eum dolore repellat temporibus hic omnis doloremque
+                maxime? Soluta laboriosam ex consequatur corporis quaerat eos iste tenetur perspiciatis neque at ipsam
+                inventore animi, tempore dolorum quidem repellendus.</p>
+            <span class="name">Presented by <br>PREET BHARDWAJ</span>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#car", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            x: 1500,
+            y: 500,
+        })
+        gsap.from("#wolf", {
+            scrollTrigger: {
+                scrub: 0.8,
+            },
+            x: -300,
+
+        })
+        gsap.from("#haunted", {
+            scrollTrigger: {
+                scrub: 0.8,
+            },
+            x: -100,
+
+        })
+        gsap.to("#bats", {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            scale: 1.3,
+
+        })
+    </script>
+</body>
+
+</html>
